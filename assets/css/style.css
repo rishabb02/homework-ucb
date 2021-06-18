@@ -26,6 +26,7 @@ body {
     font-style: normal;
 }
 
+/* I changed the div to a nav in the next 3 .header elements because I replaced the div with a nav on the HTML side to have more detailed semantic tags.   */
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -86,26 +87,24 @@ p {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
-    margin-bottom: 32px;
-    color: #ffffff;
 }
-
+/* I combined all the different classes in each of the sections into one because the styles it was adding were exactly the same */
 .benefit-individual {
     margin-bottom: 32px;
     color: #ffffff;
 }
-
+/* I did a simialr thing for the .benefit-individual h3 class because all the headers in each of the 3 sections had the exact same style attributes. */
 .benefit-individual h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-
+/* All 3 images also had the same style attributes so I combined it into one class */
 .benefit-individual img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-
+/* The 3 sections that cover the 3 different services this company provides had the same style elements so I put it all under one class  */
 .services {
     margin-bottom: 20px;
     padding: 50px;
@@ -114,11 +113,11 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
-
+/* The images in all 3 sections of the services all had a max-height of 200px so I put it under one class  */
 .services img {
     max-height: 200px;
 }
-
+/* The H2 header was for all the services so it was more efficient to put it under one class */
 .services h2 {
     margin-bottom: 20px;
     font-size: 36px;
@@ -130,7 +129,7 @@ p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-
-.footer h2 {
+/* This class needed to be changed to .footer h4 instead of .footer h2 because the heading attributes had to be in sequential order for the HTML part  */
+.footer h4 {
     font-size: 20px;
 }
